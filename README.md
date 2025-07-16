@@ -19,7 +19,7 @@ It allows you to create customers, record interactions, and view communication s
 ### 🏠 Home Page
 
 Displays all registered customers  
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/Homepage.png)
 
 ### ➕ Add Customer
 
