@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,6 +27,8 @@ SECRET_KEY = 'django-insecure-r^ip88%^7v$bc9oji(cl7!_(i56f781am2gr1#u=oh3=gy&_&d
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+CSRF_TRUSTED_ORIGINS = ['https://*.cognitiveclass.ai']
 
 
 # Application definition
@@ -115,6 +118,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,"static/"),
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
